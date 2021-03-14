@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestion Produits Chimiques</title>
+
+    <link href="~/alertify.js/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="~/alertify.js/alertify.core.css" rel="stylesheet" />
+    <link href="~/alertify.js/alertify.default.css" rel="stylesheet" />
+
+    <!-- Core CSS - Include with every page-->
+    <link href="~/Template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Template/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Blank -->
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="~/Template/css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        #typmouv{
+            margin-left:0.75em;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand miseEnformeMenu" href="#">FSM-GPC</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav miseEnformeMenu " id="side-menu">
+                        <li>
+                            <a asp-controller="Produit" asp-action="Index"><i class=" fa fas fa-flask"></i> Produits</a>
+                        </li>
+                        <!---<li>
+                          <a asp-controller="Lot" asp-action="Index"><i class="fa fa-table fa-fw"></i>Lots</a>
+                              </li>-->
+                        <!----<li>
+                            <a asp-controller="Mouvement" asp-action="Index"><i class="fa fa-exchange nav-icon" aria-hidden="true"></i> Mouvements</a>
+                        </li>-->
+                        <li>
+                            <a asp-controller="Mouvement" asp-action="Index"><i class="fa fa-exchange nav-icon"></i> Mouvements<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a asp-controller="Mouvement" asp-action="MvtEntrant">Entrant</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Mouvement" asp-action="MvtSortant">Sortant</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                    <!-- /#side-menu -->
+              </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    @RenderBody()
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core Scripts - Include with every page -->
+    <script src="~/Template/js/jquery-1.10.2.js"></script>
+    <script src="~/Template/js/bootstrap.min.js"></script>
+    <script src="~/Template/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="~/Template/js/sb-admin.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/alertify.js/alertify.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

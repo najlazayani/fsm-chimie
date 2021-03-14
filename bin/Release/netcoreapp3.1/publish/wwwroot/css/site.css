@@ -1,0 +1,140 @@
+﻿fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 2em 0.8em 2em !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*My css style*/
+#addproduit {
+    top: 17px;
+    right: 59px;
+    border: 0px;
+}
+
+.centmodel {
+    top: 30% !important;
+    transform: translateY(-35%) !important;
+}
+
+.widthmodel {
+    width: 55%
+}
+
+.widthlog {
+    width: 5%
+}
+
+.centmodAddPro {
+    top: 38% !important;
+    transform: translateY(-36%) !important;
+
+}
+
+.centmodUpPro {
+    top: 40% !important;
+    transform: translateY(-37%) !important;
+}
+
+.MiseFormeTypeMvt {
+    margin-left: 0.7em;
+}
+.MiseFormeDMvt {
+    margin-right: 6em;
+}
+
+.centmodelAddMvt {
+    top: 32% !important;
+    transform: translateY(-35%) !important;
+}
+
+.widthmodeladdmvt {
+    width: 45%
+}
+
+.miseEnformeMenu{
+    font-size:20px;
+}
+.miseEnformetable{
+    font-size:17px;
+}
+
+.colorlegende {
+    color: #1861ac;
+}
